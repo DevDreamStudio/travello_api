@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     # internal
     'drf_spectacular',
     'rest_framework',
+    'corsheaders',
     # local
     'users.apps.UsersConfig'
 ]
@@ -100,3 +101,5 @@ REST_FRAMEWORK = {
     # ],
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
+
+CORS_ALLOW_ALL_ORIGINS = True
