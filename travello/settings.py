@@ -6,7 +6,10 @@ SECRET_KEY = 'django-insecure-zb@9dwr5))&(t49s(r@_u=j_zw=po2y6=uyas@mri4)+1kb!^*
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'travelloapi.pythonanywhere.com',
+    '127.0.0.1'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
