@@ -93,3 +93,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # custom
 
 AUTH_USER_MODEL = 'users.CustomSimpleUser'
+REST_FRAMEWORK = {
+    # "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
+    # "DEFAULT_AUTHENTICATION_CLASSES": [
+    #     "rest_framework_simplejwt.authentication.JWTAuthentication",
+    # ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
