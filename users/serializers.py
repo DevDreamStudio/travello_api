@@ -42,3 +42,11 @@ class SimpleCustomUserRegisterSerializer(serializers.ModelSerializer):
         user.set_password(password)
         user.save()
         return user
+
+
+class SimpleCustomUserEmailUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.CustomSimpleUser
+        fields = ['email']
+    
+    
